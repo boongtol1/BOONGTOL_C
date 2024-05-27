@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    char pp = 111 ;
+    char pp = '\n';
 	short sh = 32767;                     // short형의 최댓값 초기화
 	int in = 2147483647;                  // int형의 최댓값 초기화
 	long ln = 2147483647;                 // long형의 최댓값 초기화
