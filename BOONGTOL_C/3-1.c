@@ -20,4 +20,5 @@ int main(void)
 	printf("변수 ch의 값 : %c\n", ch);
 
 	return 0;
+	
 }
