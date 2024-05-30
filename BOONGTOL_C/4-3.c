@@ -12,3 +12,5 @@ int main(void)
 
 	return 0;
 }
+
+// 파이썬에서 비슷한 개념?--> 
