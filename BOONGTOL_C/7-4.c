@@ -22,3 +22,4 @@ void print_line(void)
 	printf("\n");
 }
 // print_line 함수는 return; 를 쓰거나 생략할 수 있다!
+// 일반적인 함수는 function(); 를 함으로써 호출되지만 main 함수는 실행버튼을 누르는 것이 호출하는 것이다!(운영체제가 호출한다!)
