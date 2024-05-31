@@ -24,3 +24,4 @@ int main(void)
 
 	return 0;
 }
+// break 문이 없다면 case 블록의 코드가 순차적으로 실행됩니다.-->elif 가 아닌 if 적 느낌!!!
