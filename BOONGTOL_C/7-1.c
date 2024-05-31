@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int sum(int x, int y);       // sum 함수 선언 : 186쪽에서 설명합니다.
+int sum(int x, int y);       // sum 함수 선언 : 186쪽에서 설명합니다.--> x,y 는 자동으로 sum의 매개변수로 선언됨!
 
 int main(void)               // main 함수 시작
 {
@@ -15,7 +15,8 @@ int main(void)               // main 함수 시작
 
 int sum(int x, int y)        // sum 함수 정의 시작
 {
-	int temp;                // 두 정수의 합을 잠시 저장할 변수
+	int temp;                // 두 정수의 합을 잠시 저장할 변수  // 파이썬과 다르게 선언적인 변수가 하나 더 있다!(제일 원초적인 것!)
+							 // 선언적인 변수는 이 변수를 정의하기 전(위)에만 어디든지 선언되면 된다! 
 
 	temp = x + y;            // x와 y의 합을 temp에 보관
 
