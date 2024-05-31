@@ -11,7 +11,7 @@ int main(void)               // main 함수 시작
 	printf("result : %d\n", result);
 
 	return 0;
-}                            // main 함수의 끝
+}                            // main 함수의 끝  
 
 int sum(int x, int y)        // sum 함수 정의 시작
 {
