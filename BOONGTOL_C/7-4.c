@@ -21,3 +21,4 @@ void print_line(void)
 	}
 	printf("\n");
 }
+// print_line 함수는 return; 를 쓰거나 생략할 수 있다!
