@@ -12,11 +12,14 @@ int main(void)
 void fruit(int count)         // 호출 횟수를 매개변수에 저장
 {
 	printf("apple\n");
-	if (count == 3) {return;}   // 호출 횟수가 3이면 반환하고 끝낸다.
+	if (count == 3) return;   // 호출 횟수가 3이면 반환하고 끝낸다.
 	fruit(count + 1);         // 재호출할 때 호출 횟수를 1 증가
 	printf("jam\n");
 }
-// f1-->count 가 1일때의 fruit 함수 호출
-// f2-->count 가 2일때의 fruit 함수 호출
-// f3-->count 가 3일때의 fruit 함수 호출
-// return;
+// 재귀함수와 return 쉽개 생각하는법?--> 몇번째 함수에 들어와 있는지를 중요하게 생각해야 한다!
+// p7-7 으로부터 관점계적으로 얻어낸 사실?--> '재귀호출 함수는 (바로) 이전에 호출했던 곳으로 돌아갑니다'!!
+
+
+
+
+
