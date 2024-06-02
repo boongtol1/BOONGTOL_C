@@ -2,12 +2,13 @@
 
 int main(void)
 {
-	char str[80];
+	int a;             // int형 변수 선언
+	double b;          // double형 변수 선언
+	char c;            // char형 변수 선언
 
-	printf("문자열 입력 : ");  // 입력 안내 메시지 출력
-	gets(str);                 // 빈칸을 포함한 문자열 입력
-	puts("입력된 문자열 : ");  // 문자열 상수 출력
-	puts(str);                 // 배열에 저장된 문자열 출력
+	printf("int형 변수의 주소 : %u\n", &a);     // 주소 연산자로 주소 계산
+	printf("double형 변수의 주소 : %u\n", &b);
+	printf("char형 변수의 주소 : %u\n", &c);
 
 	return 0;
 }
