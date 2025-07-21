@@ -2,6 +2,7 @@ MEOBJS = movexamps.o
 AE1OBJS = addexamp1.o
 AE2OBJS = addexamp2.o
 CSOBJS = codesnippets.o
+NEGOBJS = negate.o
 
 ifdef DEBUG
 DEBUGFLGS = -g
@@ -14,7 +15,7 @@ LDFLAGS = -lSystem -syslibroot `xcrun -sdk macosx --show-sdk-path` -e _start -ar
 %.o : %.s
 	as $(DEBUGFLGS) $< -o $@
 
-all: movexamps addexamp1 addexamp2 codesnippets
+all: movexamps addexamp1 addexamp2 codesnippets negate
 
 movexamps: $(MEOBJS)
 	ld -o movexamps $(LDFLAGS) $(MEOBJS)
@@ -28,5 +29,8 @@ addexamp2: $(AE2OBJS)
 codesnippets: $(CSOBJS)
 	ld -o codesnippets $(LDFLAGS) $(CSOBJS)
 
+negate: $(NEGOBJS)
+	ld -o negate $(LDFLAGS) $(NEGOBJS)
+
 clean:
-	rm *.o movexamps addexamp1 addexamp2
+	rm -f *.o movexamps addexamp1 addexamp2 codesnippets negate

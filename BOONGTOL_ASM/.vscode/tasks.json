@@ -1,5 +1,20 @@
 {
+    "version": "2.0.0",
     "tasks": [
+        {
+            "label": "Build Assembly",
+            "type": "shell",
+            "command": "as -arch arm64 -o ${fileBasenameNoExtension}.o ${file} && ld -o ${fileBasenameNoExtension} ${fileBasenameNoExtension}.o -lSystem -syslibroot $(xcrun --sdk macosx --show-sdk-path) -e _start",
+            "problemMatcher": [],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "clear": true
+            }
+        },
         {
             "type": "cppbuild",
             "label": "C/C++: clang 활성 파일 빌드",
@@ -24,6 +39,5 @@
             },
             "detail": "디버거에서 생성된 작업입니다."
         }
-    ],
-    "version": "2.0.0"
+    ]
 }

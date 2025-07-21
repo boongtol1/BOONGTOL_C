@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Assembly",
+      "type": "shell",
+      "command": "as -arch arm64 -o ${fileBasenameNoExtension}.o ${file} && ld -o ${fileBasenameNoExtension} ${fileBasenameNoExtension}.o -lSystem -syslibroot $(xcrun --sdk macosx --show-sdk-path) -e _start",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "clear": true
+      }
+    }
+  ]
+}

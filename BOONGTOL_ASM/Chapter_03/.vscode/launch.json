@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run compiled program",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/main",
+      "cwd": "${fileDirname}",
+      "preLaunchTask": "Build C + ASM (flexible)",
+      "console": "integratedTerminal"
+    }
+  ]
+}

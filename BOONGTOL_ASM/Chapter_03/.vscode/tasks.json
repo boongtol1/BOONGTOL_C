@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build C + ASM (flexible)",
+      "type": "shell",
+      "command": "clang",
+      "args": [
+        "-arch", "arm64",
+        "-g",
+        "${fileDirname}/*.c",
+        "${fileDirname}/*.s",
+        "-o",
+        "${fileDirname}/main"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "Builds any .c and .s in current folder"
+    }
+  ]
+}
